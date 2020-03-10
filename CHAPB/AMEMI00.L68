@@ -1,0 +1,9 @@
+00001000               ORG         $1000
+00001000   START       LEA         .DATA0,A0
+00001006               LEA         .DATA1,A1
+0000100C               LEA         .DATA2,A2
+00001012   .LOOP       BRA         .LOOP
+00001014   .DATA0      DS.B        3
+00001017   .DATA1      DC.B        10,20,30,42
+0000101C   .DATA2      DS.W        1
+0000101E               END         START
